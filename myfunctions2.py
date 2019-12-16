@@ -34,3 +34,25 @@ print(pow_many(2, 1, 1) == 4)  # True -> (1 + 1)**2 == 4
 print(pow_many(3, 2) == 8)  # True -> 2**3 == 8
 print(pow_many(2, 1, 2, 3, 4) == 100)  # True -> (1 + 2 + 3 + 4)**2 == 10**2 == 100
 
+
+def print_key_val(**kwargs):
+    """
+    Функция выводит переданные параметры в фиде key --> value
+    key - имя параметра
+    value - значение параметра
+    :param kwargs: любое количество именованных параметров
+    :return: None
+    """
+    pass
+
+
+"""
+name --> Max
+age --> 21
+"""
+print_key_val(name='Max', age=21)
+"""
+animal --> Cat
+is_animal --> True
+"""
+print_key_val(animal='Cat', is_animal=True)
