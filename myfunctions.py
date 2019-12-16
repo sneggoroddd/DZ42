@@ -28,24 +28,5 @@ def separator(simbol,count):
 print(separator('-', 10) == '----------')  # True
 print(separator('#', 5) == '#####')  # True
 
-def hello_world():
-    return print('**********','\n','Hello World!','\n', '##########')
 
 
-
-    """
-    Функция печатает Hello World в формате:
-    **********
-    Hello World!
-    ##########
-    :return: None
-    """
-
-
-
-'''
-**********
-Hello World!
-##########
-'''
-hello_world()
