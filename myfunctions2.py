@@ -36,6 +36,9 @@ print(pow_many(2, 1, 2, 3, 4) == 100)  # True -> (1 + 2 + 3 + 4)**2 == 10**2 == 
 
 
 def print_key_val(**kwargs):
+    print(kwargs)
+    for key, value in kwargs.items():
+        print("{} --> {}".format(key, value))
     """
     Функция выводит переданные параметры в фиде key --> value
     key - имя параметра
@@ -43,8 +46,6 @@ def print_key_val(**kwargs):
     :param kwargs: любое количество именованных параметров
     :return: None
     """
-    pass
-
 
 """
 name --> Max
@@ -56,3 +57,4 @@ animal --> Cat
 is_animal --> True
 """
 print_key_val(animal='Cat', is_animal=True)
+
