@@ -7,14 +7,15 @@
 """
 year = 0
 day = 0
-year = int(input('Ввведите год рождения А.С.Пушкина:'))
 def while_year(year):
     while year != 1799:
-     print("Не верно")
-    print('Верно')
+      print("Не верно")
+      year = int(input('Ввведите год рождения А.С.Пушкина:'))
 while_year(year)
 day = int(input('Ввведите день рождения Пушкина?'))
 def while_day(day):
-    while day != '6':
+    while day != 6:
      print ("Не верно")
+     day = int(input('Ввведите день рождения Пушкина?'))
+while_day(day)
 print('Верно')
