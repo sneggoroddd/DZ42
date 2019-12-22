@@ -1,6 +1,7 @@
 choice = 0
 balance = 0
 pokupka = 0
+history = []
 while True:
     print("1. пополнение счета")
     print("2. покупка")
@@ -16,8 +17,10 @@ while True:
             print('Недостаточно средств')
         else:
             balance = balance - pokupka
+            name = input('введите название покупки:')
+            history.append((name,pokupka))
     elif choice == '3':
-        pass
+        print(history)
     elif choice == '4':
         print('Спасибо за пользование сервисом')
     elif choice == '5':
